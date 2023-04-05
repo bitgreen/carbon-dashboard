@@ -19,6 +19,11 @@ Emission analysis is conducted through aggregation of geolocation, grid efficien
 Update DATABASE_URL in .env to connect your postgres database
 
 To set up the cron job, provide Github secrets with the relevant POSTGRES_PASSWORD and DATABASE_URL
+OR you can setup cron job by yourself:
+`crontab -e`
+```
+0 0,6,12,18 * * * node --experimental-json-modules /path/to/scripts/createNetworkData.mjs
+```
 
 To ensure robust database security throughout the dashboard, /api/ endpoints are passed down through getStaticProps, Prisma is never directly used on the client, all database interactions happen using server-side NodeJS code. To prevent reentrancy attacks, a random nonce is generated and signed each time parachain/DApp information is updated.
 
