@@ -19,6 +19,7 @@ import LineGraphSingle from "../../components/LineGraphSingle";
 import BarGraph from "../../components/BarGraph";
 import TreemapGraph from "../../components/TreemapGraph";
 import { nodeData } from "../../types";
+import Footer from "../../components/Footer";
 
 export const getStaticProps: GetStaticProps = async () => {
   const overviewNodes = await prisma.overviewdata.findMany({
@@ -326,6 +327,7 @@ const Nodes: React.FC<Props> = (props) => {
             }
           </Grid>
         </Card>
+        <Footer></Footer>
       </main>
     </div>
   );

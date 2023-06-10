@@ -17,6 +17,7 @@ import {
 import { Card, Grid } from "@mui/material";
 import TreemapGraph from "../../components/TreemapGraph";
 import styles from "../../styles/Home.module.css";
+import Footer from "../../components/Footer";
 
 export const getStaticProps: GetStaticProps = async () => {
   const latestOverviewId: any = await prisma.overviewdata.findFirst({
@@ -299,6 +300,7 @@ const Power: React.FC<Props> = (props) => {
             </div>
           )}
         </Card>
+        <Footer></Footer>
       </main>
     </div>
   );

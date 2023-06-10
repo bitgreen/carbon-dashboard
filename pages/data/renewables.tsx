@@ -16,6 +16,7 @@ import styles from "../../styles/Home.module.css";
 import prisma from "../../lib/prisma";
 import LinearProgressWithLabel from "../../components/LinearProgressWithLabel";
 import PercentAreaChart from "../../components/PercentAreaChart";
+import Footer from "../../components/Footer";
 
 export const getStaticProps: GetStaticProps = async () => {
   const overviewEmissions = await prisma.overviewdata.findMany({
@@ -261,6 +262,7 @@ const Power: React.FC<Props> = (props) => {
             </Grid>
           </Grid>
         </Card>
+        <Footer></Footer>
       </main>
     </div>
   );

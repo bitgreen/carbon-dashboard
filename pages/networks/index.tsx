@@ -6,6 +6,7 @@ import Link from "next/link";
 import styles from "../../styles/Home.module.css";
 import prisma from "../../lib/prisma";
 import { subnetworkName } from "../../types";
+import Footer from "../../components/Footer";
 
 export async function getStaticProps() {
   // Return a list of possible value for id
@@ -306,6 +307,7 @@ const Networks: React.FC<Props> = (props) => {
           </Grid>
         </Grid>
       </main>
+      <Footer></Footer>
     </div>
   );
 };

@@ -6,6 +6,7 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import BarGraph from "../components/BarGraph";
 import LineGraph from "../components/LineGraph";
+import Footer from "../components/Footer";
 import polkadot from "../assets/images/logos/polkadot.png";
 import parity from "../assets/images/logos/parity.png";
 import offsetra from "../assets/images/logos/offsetra.png";
@@ -378,7 +379,7 @@ const Dashboard: React.FC<Props> = (props) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Polkadot Dashboard</title>
+        <title>Green Polkadot Dashboard</title>
         <meta
           name='Dashboard'
           content='An overview of the Polkadot ecosystem'
@@ -771,78 +772,7 @@ const Dashboard: React.FC<Props> = (props) => {
           </Grid>
         </Card>
       </main>
-      <footer className={styles.footer}>
-        <Grid
-          container
-          direction='column'
-          spacing={3}
-          justifyContent='center'
-          alignItems='center'
-        >
-          <Grid item>
-            <Grid
-              container
-              direction='row'
-              spacing={5}
-              justifyContent='center'
-              alignItems='center'
-            >
-              <Grid item>
-                <Link href='https://polkadot.network/'>
-                  <a>
-                    <img src={polkadot.src} height={50} width={50} />
-                  </a>
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link href='https://www.parity.io/'>
-                  <a>
-                    <img src={parity.src} height={50} />
-                  </a>
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link href='https://offsetra.com/'>
-                  <a>
-                    <img src={offsetra.src} height={50} />
-                  </a>
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link href='https://bitgreen.org/'>
-                  <a>
-                    <img src={bitgreen.src} height={50} />
-                  </a>
-                </Link>
-              </Grid>
-            </Grid>
-          </Grid>
-          <Grid item width='100%'>
-            <p className={styles.footerText}>Parachain operator?</p>
-            <Grid item>
-              <Grid
-                container
-                direction='row'
-                justifyContent='center'
-                alignItems='center'
-                spacing={0.3}
-              >
-                <Grid item>
-                  <Link href='/login'>
-                    <a className={styles.footerLink}>Login</a>
-                  </Link>
-                </Grid>
-                <Grid item>
-                  <h4 className={styles.footerText}> </h4>
-                </Grid>
-                <Grid item>
-                  <h4 className={styles.footerText}>and add your data</h4>
-                </Grid>
-              </Grid>
-            </Grid>
-          </Grid>
-        </Grid>
-      </footer>
+      <Footer></Footer>
     </div>
   );
 };

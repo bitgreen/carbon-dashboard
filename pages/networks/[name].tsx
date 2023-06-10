@@ -20,6 +20,7 @@ import {
 } from "recharts";
 import prisma from "../../lib/prisma";
 import { subnetworkNodes, dAppData } from "../../types";
+import Footer from "../../components/Footer";
 
 export async function getStaticPaths() {
   // Return a list of possible value for id
@@ -515,6 +516,7 @@ const NetworkPage: React.FC<Props> = (props) => {
           </Card>
         </Card>
       </main>
+      <Footer></Footer>
     </div>
   );
 };

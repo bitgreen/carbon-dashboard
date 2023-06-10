@@ -39,6 +39,11 @@ h4{
   letter-spacing: 0.01em;
   margin: 0;
 }
+h5 {
+  font-size: 18pt;
+  margin: 12px 0;
+  font-weight: 600;
+}
 
 .css-1160xiw-MuiPaper-root-MuiDrawer-paper, .MuiPaper-root.MuiDrawer-paper {
   background-color: #051C00 !important;

@@ -3,6 +3,7 @@ import { Card } from "@mui/material";
 import Router from "next/router";
 import styles from "../styles/Home.module.css";
 import dynamic from "next/dynamic";
+import Footer from "../components/Footer";
 const LoginModal = dynamic(() => import("../components/loginModal"), {
   ssr: false,
 });
@@ -41,6 +42,7 @@ const Login: React.FC<Props> = (props) => {
           </Card>
         </Card>
       </main>
+      <Footer></Footer>
     </div>
   );
 };

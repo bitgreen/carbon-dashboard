@@ -57,7 +57,16 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: white;
+  background-color: #224851;
+}
+.polkadot {
+  display: block !important;
+  text-align: left;
+}
+.link {
+  display: block !important;
+  text-align: left;
+  margin-bottom: 12px;
 }
 
 .header {

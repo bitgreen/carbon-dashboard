@@ -20,6 +20,7 @@ import TreemapGraph from "../../components/TreemapGraph";
 import styles from "../../styles/Home.module.css";
 import prisma from "../../lib/prisma";
 import { treemap } from "../../types";
+import Footer from "../../components/Footer";
 
 export const getStaticProps: GetStaticProps = async () => {
   const latestOverviewId: any = await prisma.overviewdata.findFirst({
@@ -388,6 +389,7 @@ const Emissions: React.FC<Props> = (props) => {
             </Card>
           </Grid>
         </Card>
+        <Footer></Footer>
       </main>
     </div>
   );
