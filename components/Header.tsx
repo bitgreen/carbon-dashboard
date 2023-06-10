@@ -125,6 +125,7 @@ const Header: React.FC = () => {
                 <Typography variant="h6" id="modal-title">
                   Disclaimer
                 </Typography>
+                {/* @ts-ignore*/}
                 <Typography variant="body1" id="modal-description" style={disclaimerStyle}>
                   <p>This Green Polkadot Dashboard (the “Dashboard”) is provided to you by Web 3.0 Technologies Foundation (“W3F”). Before using it, kindly take a moment to review and acknowledge the following terms and conditions:</p>
                   <ol>
