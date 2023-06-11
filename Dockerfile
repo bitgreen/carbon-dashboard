@@ -16,7 +16,7 @@ COPY .env.Docker /usr/src/carbon-dashboard/.env
 COPY autostart.sh /usr/src/carbon-dashboard/autostart.sh
 RUN chmod a+x /usr/src/carbon-dashboard/autostart.sh
 # final configuration
-EXPOSE 3001
+EXPOSE 3000
 WORKDIR /usr/src/carbon-dashboard
 CMD "/usr/src/carbon-dashboard/autostart.sh"
 
