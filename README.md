@@ -33,6 +33,6 @@ This is a [Next.js](https://nextjs.org/) project developed by [Offsetra](https:/
 You can run the server in a docker container with the following from the
 project folder:  
 ```
-docker compose run -d
+docker compose up -d
 ```
 The server will be reachable browsing http://localhost:3001  
