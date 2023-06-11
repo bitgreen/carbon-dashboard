@@ -28,3 +28,12 @@ OR you can setup cron job by yourself:
 To ensure robust database security throughout the dashboard, /api/ endpoints are passed down through getStaticProps, Prisma is never directly used on the client, all database interactions happen using server-side NodeJS code. To prevent reentrancy attacks, a random nonce is generated and signed each time parachain/DApp information is updated.
 
 This is a [Next.js](https://nextjs.org/) project developed by [Offsetra](https://offsetra.com/).
+
+## Docker
+You can run the server in a docker container with the following from the
+project folder:  
+```
+docker build -t carbon-dashboard:latest .  
+docker run -p 3002:3000 carbon-dashboard:latest  
+```
+The server will be reachable browsing http://localhost:3002  
