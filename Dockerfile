@@ -6,7 +6,7 @@ RUN apt-get update && apt-get -y upgrade
 RUN apt-get install -y curl apt-utils
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
 RUN apt-get install -y nodejs
-RUN apt-get -y install git
+RUN apt-get -y install git cron 
 WORKDIR /usr/src/
 RUN git clone https://github.com/bitgreen/carbon-dashboard.git 
 WORKDIR /usr/src/carbon-dashboard

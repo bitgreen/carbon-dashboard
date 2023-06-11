@@ -27,12 +27,27 @@ OR you can setup cron job by yourself:
 
 To ensure robust database security throughout the dashboard, /api/ endpoints are passed down through getStaticProps, Prisma is never directly used on the client, all database interactions happen using server-side NodeJS code. To prevent reentrancy attacks, a random nonce is generated and signed each time parachain/DApp information is updated.
 
-This is a [Next.js](https://nextjs.org/) project developed by [Offsetra](https://offsetra.com/).
-
 ## Docker
+
+You can run this Dashboard in  Docker containers with minimal effort as follows:  
+
+### Requirements:  
+Install docker and docker composer from [https://www.docker.com](https://www.docker.com)  
+
+### Build and Run  
+From the project folder execute: 
+=======
 You can run the server in a docker container executing the following command from the
 project folder:  
+
 ```
 docker compose up -d
 ```
-The server will be reachable browsing http://localhost:3001  
+Please wait for a few minutes to let the server populate some records in the
+database.  
+The server will be reachable browsing http://localhost:3001   
+
+  
+This is a [Next.js](https://nextjs.org/) project developed by [Offsetra](https://offsetra.com/).
+
+
