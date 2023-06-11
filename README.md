@@ -36,7 +36,6 @@ Install docker and docker composer from [https://www.docker.com](https://www.doc
 
 ### Build and Run  
 From the project folder execute: 
-=======
 You can run the server in a docker container executing the following command from the
 project folder:  
 
