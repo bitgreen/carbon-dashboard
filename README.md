@@ -33,7 +33,6 @@ This is a [Next.js](https://nextjs.org/) project developed by [Offsetra](https:/
 You can run the server in a docker container with the following from the
 project folder:  
 ```
-docker build -t carbon-dashboard:latest .  
-docker run -p 3002:3000 carbon-dashboard:latest  
+docker compose run -d
 ```
-The server will be reachable browsing http://localhost:3002  
+The server will be reachable browsing http://localhost:3001  
