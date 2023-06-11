@@ -30,7 +30,7 @@ To ensure robust database security throughout the dashboard, /api/ endpoints are
 This is a [Next.js](https://nextjs.org/) project developed by [Offsetra](https://offsetra.com/).
 
 ## Docker
-You can run the server in a docker container with the following from the
+You can run the server in a docker container executing the following command from the
 project folder:  
 ```
 docker compose up -d
