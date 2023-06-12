@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
                 padding={2}
                 paddingLeft={4}
                 paddingRight={4}
-                justifyContent='center'
+                // justifyContent='center'
                 alignItems='center'
             >
                 <Grid container>
@@ -114,6 +114,14 @@ const Footer: React.FC = () => {
                                 Login
                             </Button>
                         </Link>
+                        <Grid item paddingTop={10}>
+                            <Link href='https://web3.foundation/legal-disclosures/' style={{ display: 'inline-block', marginRight: '8px' }}>
+                                <a className={styles.link}>Legal Disclosures</a>
+                            </Link>
+                            <Link href='https://web3.foundation/privacy-and-cookies/' style={{ display: 'inline-block', marginRight: '8px' }}>
+                                <a className={styles.link}>Privacy Policy</a>
+                            </Link>
+                        </Grid>
                     </Grid>
                 </Grid>
                 <Grid container paddingTop={5}>
@@ -121,12 +129,11 @@ const Footer: React.FC = () => {
                         container
                         direction='row'
                         spacing={5}
-                        justifyContent='center'
                         alignItems='center'
                     >
                         <Hidden mdDown>
                             <Grid item xs={12} sm={12} md={4} style={{display: 'block', textAlign: 'left'}}>
-                                © 2023 Bitgreen. All rights reserved.
+                                © 2023 Web3 Foundation. All rights reserved.
                             </Grid>
                         </Hidden>
                         <Grid item xs={12} sm={12} md={7}>
@@ -159,7 +166,7 @@ const Footer: React.FC = () => {
                         </Grid>
                         <Hidden mdUp>
                             <Grid item xs={12} sm={12} md={4} style={{display: 'block', textAlign: 'center'}}>
-                                © 2023 Bitgreen. All rights reserved.
+                                © 2023 Web3 Foundation. All rights reserved.
                             </Grid>
                         </Hidden>
                     </Grid>

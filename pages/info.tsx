@@ -41,7 +41,7 @@ const Info: NextPage = (props) => {
               </AccordionSummary>
               <AccordionDetails>
                 <h4 className={styles.infoText}>
-                  The Bitgreen carbon dashboard provides ongoing insights into
+                  Green Polkadot Dashboard provides ongoing insights into
                   the Polkadot network’s energy consumption, energy mix and its
                   associated carbon footprint.
                 </h4>
